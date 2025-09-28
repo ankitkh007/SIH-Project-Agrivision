@@ -2,6 +2,8 @@
 pip>=23.2
 setuptools>=68.0.0
 wheel>=0.41.2
+
+# Cython first for compiling extensions
 Cython==0.29.36
 
 # Data Processing

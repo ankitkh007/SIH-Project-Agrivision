@@ -1,10 +1,13 @@
 #!/bin/bash
 
-# Force upgrade pip, setuptools, wheel
+# 1️⃣ Force upgrade pip, setuptools, wheel
 python -m pip install --upgrade pip setuptools wheel --force-reinstall --no-cache-dir
 
-# Install dependencies from your Requirement file
+# 2️⃣ Install Cython first (so other C extensions compile safely)
+pip install --no-cache-dir Cython==0.29.36
+
+# 3️⃣ Install rest of the dependencies
 pip install --no-cache-dir -r requirement.txt
 
-# Optional: run any migrations or setup here if needed
-# Example: python bend.py  # Only if needed
+# ✅ Optional: migrations or pre-start commands
+# python bend.py  # only if needed
