@@ -5,4 +5,4 @@ set -o errexit
 pip install --upgrade pip setuptools wheel
 
 # Install dependencies
-pip install -r requirements.txt
+pip install -r requirement.txt
