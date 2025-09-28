@@ -1,3 +1,9 @@
+# Build essentials
+pip>=23.2
+setuptools>=68.0.0
+wheel>=0.41.2
+Cython==0.29.36
+
 # Data Processing
 numpy==1.24.4
 pandas==2.1.4
@@ -14,6 +20,3 @@ pydantic==2.5.0
 
 # CORS Support
 fastapi-cors==0.0.6
-
-# Extra build helpers
-Cython==0.29.36
