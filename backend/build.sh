@@ -7,7 +7,7 @@ python -m pip install --upgrade pip setuptools wheel --force-reinstall --no-cach
 pip install --no-cache-dir Cython==0.29.36
 
 # 3️⃣ Install rest of the dependencies
-pip install --no-cache-dir -r requirement.txt
+pip install --no-cache-dir -r requirements.txt
 
 # ✅ Optional: migrations or pre-start commands
 # python bend.py  # only if needed
