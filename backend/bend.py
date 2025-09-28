@@ -346,7 +346,7 @@ def predict_yield(data: PredictRequest):
 # Add this main section for Railway deployment
 if __name__ == "__main__":
     import uvicorn
-    port = int(os.environ.get("PORT", 8000))
+    port = int(os.environ.get("PORT", 0))
     print(f"Starting server on port: {port}")
     uvicorn.run(
         "bend:app",  # Updated to match your filename
