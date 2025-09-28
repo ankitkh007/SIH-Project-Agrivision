@@ -1,0 +1,10 @@
+services:
+  - type: web
+    name: agrivision-backend
+    env: python
+    plan: free   # Free plan, upgrade if needed
+    buildCommand: ./build.sh
+    startCommand: uvicorn bend:app --host 0.0.0.0 --port 10000
+    envVars:
+      - key: PYTHON_VERSION
+        value: 3.10.12
