@@ -8,6 +8,7 @@ import re
 from fastapi.middleware.cors import CORSMiddleware
 import requests
 import os
+import sklearn
 import uvicorn  # Add this import
 
 app = FastAPI()
