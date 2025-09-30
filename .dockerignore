@@ -1,0 +1,19 @@
+# Ignore frontend (not needed for backend build)
+frontend/
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Virtual environments
+.venv/
+env/
+venv/
+
+# Git & misc
+.git
+.gitignore
+*.db
+*.log
